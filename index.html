@@ -10,17 +10,80 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              clifford: '#da373d',
-            }
           }
         }
       }
     </script>
    <title>Document</title>
 </head>
-<body>
-   <div class="text-clifford">Hello</div>
+<body class="">
+   <header>
+      <div class='flex justify-between px-2 py-4 sm:px-16 md:px-5 lg:py-6 lg:px-24 xl:px-32 relative z-20 bg-white'>
+         <div class='flex gap-6 lg:gap-12 items-center'>
+            <div class='hidden sm:flex lg:gap-4 gap-3 font-normal text-base items-center text-deep-navy'>
+               <div className='scale-75 sm:scale-100'>
+                  <img src='/asset/logo/infinity.png' height="50px" width="50px" alt='LIMITLESS logo'/>
+               </div>
+               <div class="font-medium text-xl md:text-2xl text-transparent tracking-widest cursor-pointer bg-clip-text bg-gradient-to-r from-[#7F50E4] to-[#BF45FA]">LIMITLESS</div>
+            </div>
+            <div class='hidden sm:flex lg:gap-6 gap-3 font-normal text-xl items-center text-deep-navy'>
+               <a href="#"><div class='cursor-pointer text-[#090510] bg-clip-text bg-gradient-to-r hover:text-transparent hover:from-[#7F50E4] hover:to-[#BF45FA]'>Find Jobs</div></a>
+               <a href=""><div class='cursor-pointer text-[#0d0818] bg-clip-text bg-gradient-to-r hover:text-transparent hover:from-[#7F50E4] hover:to-[#BF45FA]'>Company reviews</div></a>
+            </div>
+         </div>
+         <div class='select-none flex items-center gap-2 py-3 px-6 rounded-full bg-gradient-to-b from-[#7F50E4] to-[#BF45FA] cursor-pointer'>
+            <div class='font-medium text-sm text-white'>Login/Signup</div>
+         </div>
+      </div>
+      <hr/>
+   </header>
+   <section>
+      <div>
+         <form class="px-32 mt-12">   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+            <div class="relative">
+               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+               </div>
+               <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 " placeholder="Search for jobs..." required>
+               <button type="submit" class="text-white absolute right-2.5 bottom-2.5  bg-gradient-to-b from-[#7F50E4] to-[#BF45FA] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+            </div>
+         </form>
+         <div class="mt-8 flex w-full items-center px-32">
+            <!-- <hr class="flex-1"/> -->
+            <div class="font-medium text-3xl mx-2">
+               Jobs you might like
+            </div>
+            <!-- <hr class="flex-1"/> -->
+         </div>
+      </div>
+   </section>
+   <footer class="absolute bottom-0 w-full">
+      <hr/>
+      <div class="flex justify-center py-4 items-center flex-col gap-4">
+         <div class="flex gap-4 ">
+               <img src="/asset/icons/facebook.png" height="40px" width="40px" class="cursor-pointer transition duration-150 ease-in-out hover:scale-110" alt="facebook">
+               <img src="/asset/icons/instagram.png" height="40px" width="40px" class="cursor-pointer transition duration-150 ease-in-out hover:scale-110" alt="instagram">
+               <img src="/asset/icons/twitter.png" height="40px" width="40px" class="cursor-pointer transition duration-150 ease-in-out hover:scale-110" alt="twitter">
+         </div>
+         <div class=" text-center">
+            <div class="text-gray-700 text-lg">
+               Budhanilkantha-7, Kathmandu, Nepal
+            </div>
+            <div class="text-gray-700 text-lg flex">    
+               <div class="flex justify-center items-center gap-2">
+                  <img src="/asset//icons/email.png" class="h-4 w-4" alt="telephone">
+                   <a href="mailto:jobs@limitless.com">jobs@limitless.com</a>  
+               </div>     
+               <div class="mr-2"></div>      
+               <div class="flex justify-center items-center gap-1">
+                  <img src="/asset//icons/telephone-handle-silhouette.png" class="h-4 w-4" alt="telephone">
+                  <a href="tel:+977-0439145">+977-0439145</a>
+               </div>
+               </div>
+            </div>
+      </div>
+   </footer>
 </body>
 <script src="./index.js"></script>
 </html>
