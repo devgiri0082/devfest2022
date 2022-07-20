@@ -78,8 +78,8 @@ export function detailPopup(
          </section>
          <section>
             <div class="button-area">
-               <button class="save-job close">Close</button>
-               <button class="quick-apply">Quick Apply</button>
+               <button class="save-job close px-2">Close</button>
+               <button class="quick-apply bg-green-700 px-2 text-white">Quick Apply</button>
             </div>
          </section>
          
