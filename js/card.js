@@ -3,10 +3,13 @@ export function addCard(
   eachTag = ["NEW", "FEATURED"],
   jobTitle = "Software Engineer",
   descriptions = ["1d ago", "Part Time"],
-  imageLink = "/asset/icons/man.png"
+  imageLink = "/asset/icons/man.png",
+  className
 ) {
   const cardTemplateElem = document.getElementById("card");
   const newCardElem = cardTemplateElem.content.cloneNode(true);
+  const firstDiv = newCardElem.querySelector("div");
+  firstDiv.classList.add(className);
   const image = newCardElem.querySelector(".job-logo");
   const companyElem = document.createElement("li");
   const tags = newCardElem.querySelector(".tags");
