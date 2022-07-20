@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style/card.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <script>
       tailwind.config = {
@@ -16,7 +16,7 @@
     </script>
    <title>Document</title>
 </head>
-<body class="">
+<body class="flex flex-col">
    <header>
       <div class='flex justify-between px-2 py-4 sm:px-16 md:px-5 lg:py-6 lg:px-24 xl:px-32 relative z-20 bg-white'>
          <div class='flex gap-6 lg:gap-12 items-center'>
@@ -37,28 +37,55 @@
       </div>
       <hr/>
    </header>
-   <section>
-      <div>
-         <form class="px-32 mt-12">   
-            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
-            <div class="relative">
-               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+   <section class="flex-1">
+      <div class="">
+         <div class="px-32 my-12">
+               <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+               <div class="relative">
+                  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                     <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  </div>
+                  <input type="search"  id="default-search" class="search outline-none block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 " placeholder="Search for jobs..." required>
+                  <!-- <button type="submit" class="text-white absolute right-2.5 bottom-2.5  bg-gradient-to-b from-[#7F50E4] to-[#BF45FA] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button> -->
                </div>
-               <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 " placeholder="Search for jobs..." required>
-               <button type="submit" class="text-white absolute right-2.5 bottom-2.5  bg-gradient-to-b from-[#7F50E4] to-[#BF45FA] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+            <div class="mt-8 flex w-full items-center px-32">
+               <div class="font-medium text-3xl mx-2">
+                  Jobs you might like
+               </div>
+               
             </div>
-         </form>
-         <div class="mt-8 flex w-full items-center px-32">
-            <!-- <hr class="flex-1"/> -->
-            <div class="font-medium text-3xl mx-2">
-               Jobs you might like
-            </div>
-            <!-- <hr class="flex-1"/> -->
+                     
          </div>
       </div>
+      <div class="card-container">
+         <template class="card-template" id="card">
+            <div class="card">
+               <figure class="job-logo-container">
+                  <img src='' alt="job" class="job-logo">
+               </figure>
+               <section class="job-description-container">
+      
+                  <ul class="tags">
+                     <!-- <li class="company-name">Loop Studio</li> -->
+                     <!-- <li class="tag-name">NEW</li>
+                     <li class="tag-name">FEATURED</li> -->
+                  </ul>
+      
+                  <h3 class="job-post">Hello</h3>
+                  
+                  <ul class="mini-description">
+                     <!-- <li>1d ago</li>
+                     <li>Part Time</li> -->
+                  </ul>
+                  
+      
+      
+               </section>
+            </div>
+         </template>
+      </div>
    </section>
-   <footer class="absolute bottom-0 w-full">
+   <footer class="">
       <hr/>
       <div class="flex justify-center py-4 items-center flex-col gap-4">
          <div class="flex gap-4 ">
@@ -85,5 +112,5 @@
       </div>
    </footer>
 </body>
-<script src="./index.js"></script>
+<script type="module" src="/js/index.js"></script>
 </html>
