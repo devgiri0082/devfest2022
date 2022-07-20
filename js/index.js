@@ -48,10 +48,10 @@ function addDummy(count) {
   });
 }
 
-const search = document.querySelector(".search");
+// const search = document.querySelector(".search");
 
-search.addEventListener("onkeypress", filterJobs);
+// search.addEventListener("onkeypress", filterJobs);
 
-function filterJobs(e) {
-  console.log(e.target.value);
-}
+// function filterJobs(e) {
+//   console.log(e.target.value);
+// }
