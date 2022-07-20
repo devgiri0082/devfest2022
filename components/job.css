@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,400&family=Tangerine:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	/* outline: 1px solid green; */
+}
+body {
+	font-family: 'Inter', sans-serif;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+.container{
+	box-shadow: 2px 2px 20px grey;
+	border-radius: 0.5rem;
+	min-width: 900px;
+	display: flex;
+	flex-direction: column;
+}
+.attribute-value {
+	text-align: right;
+}
+.heading-area {
+	display: flex;
+	gap: 1rem;
+	border-bottom: 1px solid #b5b6b7;
+	padding: 1rem;
+	height: 90px;
+}
+.info-heading {
+	margin-block: 1.3rem;
+}
+.popup-body{
+	height: 500px;
+	flex: 1;
+	overflow: auto;
+	padding-inline: 1rem;
+}
+
+.company-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.company-logo {
+	height: 3rem;
+}
+.company-heading {
+	font-size: 1.2rem;
+}
+.company-description{
+	font-size: 0.8rem;
+}
+.button-area {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	border-top: 1px solid #b5b6b7;
+	padding: 1rem;
+	height: 70px;
+}
+.job-specification-list li, .basic-info-list li {
+	/* border-bottom: 1px solid #d1d1d1; */
+	cursor: pointer;
+	padding: 0.7rem 0.3rem;
+	/* border-radius: 0.5rem; */
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.423);
+
+}
+.heading-for-description {
+	margin-block: 1rem;
+}
+.job-specification-list li:hover, .basic-info-list li:hover {
+	/* background-color: #d1d1d1; */
+}
+.other-specification-list li {
+	padding-block: 0.3rem;
+}
+button {
+	background-color: green;
+	color: white;
+	font-size: 1rem;
+	padding: 0.5rem 1.2rem;
+	border: none;
+	/* border-radius: 0.2rem; */
+	border-radius: 1.2rem;
+	cursor: pointer;
+}
+
+.save-job {
+	background-color: white;
+	color: green;
+	border: 2px solid green;
+}
+.save-job:hover {
+	background-color: green;
+	transform: scale(1.1);
+	color:	white;
+}
+.quick-apply:hover {
+	transform: scale(1.1);
+}
